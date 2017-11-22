@@ -1,0 +1,1 @@
+<p>Nome: <strong> {{ $jogo['nome'] . ' | ' }}</strong> Desenvolvedor: <strong> {{ $jogo['desenvolvedor'] }}</strong> </p>

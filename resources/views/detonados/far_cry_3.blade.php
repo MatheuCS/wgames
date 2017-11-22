@@ -1,113 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>WGames - Detonado - Far Cry 3</title>
-<style type="text/css">
+@extends('layout.base_layout')
+@section('titulo')
+  {{'Far Cry 3'}}
+@stop
 
-body,td,th {
-  color: #FFF;
-}
-body {
-  background-color: #000;
-  background: url("/img/Fundo_site.jpg");
-}
-#apDiv1 {
-  position:absolute;
-  width:200px;
-  height:115px;
-  z-index:1;
-}
-#apDiv2 {
-  position:absolute;
-  width:200px;
-  height:115px;
-  z-index:1;
-}
-td img {display: block;}
+@section('conteudo')
+      @component('comp_titulo_detonado')
+          @slot('titulo')
+            Detonado Far Cry 3:
+          @endslot
+      @endcomponent
 
-</style>
-
-</head>
-
-<body >
-<table width="950" border="0" align="center">
-  <tr>
-    <td><img src="<?php echo asset('img/cabecalho.gif'); ?>" width="941" height="250" /></td>
-  </tr>
-</table>
-<table width="950" border="0" align="center">
-  <tr>
-    <td><table style="margin-left: 10%;" border="0" cellpadding="0" cellspacing="0" width="950">
-      <!-- fwtable fwsrc="Menu.png" fwpage="Page 1" fwbase="Menu.gif" fwstyle="Dreamweaver" fwdocid = "207533512" fwnested="0" -->
-      <tr>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="1" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="154" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="47" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="155" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="41" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="155" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="43" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="155" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="44" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="155" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="1" height="1" border="0" id="undefined_2" /></td>
-      </tr>
-
-      <tr>
-
-        <td rowspan="2" colspan="2">
-          <a href="/">
-            <img name="Menu_r1_c1" src="<?php echo asset('img/Menu/Menu_r1_c1.gif'); ?>" width="155" height="30" border="0" id="Menu_r1_c1" alt="" />
-          </a>
-        </td>
-
-        <td rowspan="2"><img name="Menu_r1_c3" src="<?php echo asset('img/Menu/Menu_r1_c3.gif'); ?>" width="47" height="30" border="0" id="Menu_r1_c3" alt="" /></td>
-
-        <td rowspan="2">
-          <a href="/jogos">
-            <img name="Menu_r1_c4" src="<?php echo asset('img/Menu/Menu_r1_c4.gif'); ?>" width="155" height="30" border="0" id="Menu_r1_c4" alt="" />
-          </a>
-        </td>
-
-        <td rowspan="2">
-          <img name="Menu_r1_c5" src="<?php echo asset('img/Menu/Menu_r1_c5.gif'); ?>" width="41" height="30" border="0" id="Menu_r1_c5" alt="" />
-        </td>
-
-        <td rowspan="2">
-          <a href="/detonado">
-            <img name="Menu_r1_c6" src="<?php echo asset('img/Menu/Menu_r1_c6.gif'); ?>" width="155" height="30" border="0" id="Menu_r1_c6" alt="" />
-          </a>
-        </td>
-
-        <td rowspan="2">
-          <img name="Menu_r1_c7" src="<?php echo asset('img/Menu/Menu_r1_c7.gif'); ?>" width="43" height="30" border="0" id="Menu_r1_c7" alt="" />
-        </td>
-
-        <td rowspan="2">
-          <a href="contato">
-            <img name="Menu_r1_c10" src="<?php echo asset('img/Menu/Menu_r1_c10.gif'); ?>" width="155" height="30" border="0" id="Menu_r1_c10" alt="" />
-          </a>
-        </td>
-
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="1" height="1" border="0" id="undefined_2" /></td>
-
-      </tr>
-      <tr>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="1" height="29" border="0" id="undefined_2" /></td>
-      </tr>
-    </table>
-  </td> 
-  </tr>
-</table>
-
-<table width="944" height="auto" border="0" align="center">
-
-  <tr bgcolor="#000000">
-    <td height="auto">
-      <div style="margin: 2%;">
-      <h2>Detonado Far Cry 3:<br />
-    </h2>
       <p>Além dos limites da civilização encontra-se uma ilha, um lugar sem   lei,governado por pirataria e miséria humana, onde seus escapes são   apenas as drogas ou o cano de uma arma. </p>
       <p>Missão-Make A Break For It(Faça uma pausa para ele)<br />
       </p>
@@ -384,11 +286,7 @@ td img {display: block;}
       <p>O homem de branco vai entrar no bar, venha para a sua mesa,   e dizer que você jogou bem. Ele vai deixar o bar, e seu objetivo será a   segui-lo sem que ele percebesse. Deixe a barra da mesma forma que   entrou, e vire à direita. O homem de branco deve ficar em torno de   costas voltado para você por cerca de cinco segundos, em seguida,   começar a andar.Ir atrás dele, e certifique-se que você não está muito   perto.Ele vai parar na primeira curva na estrada da cidade aqui, e é   recomendável que você fique perto dos dois homens que estão falando, a   fim de evitar ser detectado por ele quando ele se vira. Ele vai então   continuar ao longo de seu caminho e parar para conversar com uma mulher   do lado esquerdo. Fique perto da curva atrás do prédio aqui, e de pico   em torno do canto de vez em quando para se certificar de que ele não   saiu ainda. Depois que ele terminou de falar com a mulher, ele vai   continuar no caminho para a frente, e depois vire à esquerda. Não se   preocupe em obter uma cobertura ainda. Ele não vai virar por algum   tempo.<br />
       </p>
       <p>Ele vai atravessar uma ponte de um pequeno riacho de água, em   seguida, fazer a próxima à direita. Isto é onde você vai querer ter   cuidado. Depois que ele faz a sua vez, ele vai parar, virar-se, então ir   para a esquerda e entrar em um edifício. Depois que ele entra neste   prédio, a missão terminará.</p>
+@stop
 
-<p><img src="<?php echo asset('img/Rodapé.png'); ?>" width="900" height="95" /></p></td>
-</div>
 
-</table>
-
-</body>
-</html>
+      

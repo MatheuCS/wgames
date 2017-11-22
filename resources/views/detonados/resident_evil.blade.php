@@ -1,113 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>WGames - Detonado - Resident Evil</title>
-<style type="text/css">
+@extends('layout.base_layout')
+@section('titulo')
+  {{'Resident Evil'}}
+@stop
 
-body,td,th {
-  color: #FFF;
-}
-body {
-  background-color: #000;
-  background: url("/img/Fundo_site.jpg");
-}
-#apDiv1 {
-  position:absolute;
-  width:200px;
-  height:115px;
-  z-index:1;
-}
-#apDiv2 {
-  position:absolute;
-  width:200px;
-  height:115px;
-  z-index:1;
-}
-td img {display: block;}
+@section('conteudo')
+      @component('comp_titulo_detonado')
+          @slot('titulo')
+            Detonado Resident Evil 4:
+          @endslot
+      @endcomponent
 
-</style>
-
-</head>
-
-<body >
-<table width="950" border="0" align="center">
-  <tr>
-    <td><img src="<?php echo asset('img/cabecalho.gif'); ?>" width="941" height="250" /></td>
-  </tr>
-</table>
-<table width="950" border="0" align="center">
-  <tr>
-    <td><table style="margin-left: 10%;" border="0" cellpadding="0" cellspacing="0" width="950">
-      <!-- fwtable fwsrc="Menu.png" fwpage="Page 1" fwbase="Menu.gif" fwstyle="Dreamweaver" fwdocid = "207533512" fwnested="0" -->
-      <tr>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="1" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="154" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="47" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="155" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="41" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="155" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="43" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="155" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="44" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="155" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="1" height="1" border="0" id="undefined_2" /></td>
-      </tr>
-
-      <tr>
-
-        <td rowspan="2" colspan="2">
-          <a href="/">
-            <img name="Menu_r1_c1" src="<?php echo asset('img/Menu/Menu_r1_c1.gif'); ?>" width="155" height="30" border="0" id="Menu_r1_c1" alt="" />
-          </a>
-        </td>
-
-        <td rowspan="2"><img name="Menu_r1_c3" src="<?php echo asset('img/Menu/Menu_r1_c3.gif'); ?>" width="47" height="30" border="0" id="Menu_r1_c3" alt="" /></td>
-
-        <td rowspan="2">
-          <a href="/jogos">
-            <img name="Menu_r1_c4" src="<?php echo asset('img/Menu/Menu_r1_c4.gif'); ?>" width="155" height="30" border="0" id="Menu_r1_c4" alt="" />
-          </a>
-        </td>
-
-        <td rowspan="2">
-          <img name="Menu_r1_c5" src="<?php echo asset('img/Menu/Menu_r1_c5.gif'); ?>" width="41" height="30" border="0" id="Menu_r1_c5" alt="" />
-        </td>
-
-        <td rowspan="2">
-          <a href="/detonado">
-            <img name="Menu_r1_c6" src="<?php echo asset('img/Menu/Menu_r1_c6.gif'); ?>" width="155" height="30" border="0" id="Menu_r1_c6" alt="" />
-          </a>
-        </td>
-
-        <td rowspan="2">
-          <img name="Menu_r1_c7" src="<?php echo asset('img/Menu/Menu_r1_c7.gif'); ?>" width="43" height="30" border="0" id="Menu_r1_c7" alt="" />
-        </td>
-
-        <td rowspan="2">
-          <a href="contato">
-            <img name="Menu_r1_c10" src="<?php echo asset('img/Menu/Menu_r1_c10.gif'); ?>" width="155" height="30" border="0" id="Menu_r1_c10" alt="" />
-          </a>
-        </td>
-
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="1" height="1" border="0" id="undefined_2" /></td>
-
-      </tr>
-      <tr>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="1" height="29" border="0" id="undefined_2" /></td>
-      </tr>
-    </table>
-  </td> 
-  </tr>
-</table>
-
-<table width="944" height="auto" border="0" align="center">
-
-  <tr bgcolor="#000000">
-    <td height="auto">
-      <div style="margin: 2%;">
-      <h2>Detonado Resident Evil 4:<br />
-    </h2>
       <p>Tem se passado 10 anos desde o incidente em Raccoon City,e o   presidente dos Estados Unidos decidiu revelar a verdade por trás do que   aconteceu na crença de que ele irá conter o ressurgimento da atividade   bioterrorista.Devido ao seu amigo pessoal e sobrevivente de Raccoon   City, Leon S. Kennedy estar ao lado do presidente,mas quando o local   sofre um ataque bioterrorista,Leon é forçado a enfrentar um Presidente   zumbi e tomar sua decisão mais difícil da vida.Resident Evil 6 promete   ser dramático,uma mistura de ação e horror de sobrevivência.,Em Resident   evil 6,Leon e Chris se unem para enfrentar esta ameaça sem precedentes. </p>
       <p>Este primeiro cápitulo começa com eles tentando escapar da   epidemia de vírus  mais recentes à moda antiga - por deixar a cidade em   um ônibus.</p>
 
@@ -276,11 +178,4 @@ Enfrentando Deborah
 <p>Leon tem que ativar alguns interruptores para montar o   carrinho     depois - jogadores Helena e Ada apenas precisa de alguns   rifles dos     inimigos da segurança de sua minecart. Leon deve correr   para o fundo     rapidamente, desperdiçar os inimigos próximos, então   use a QTE para     acionar o minecart para o lançamento.Enquanto luta   Deborah no minecart, parece haver um ponto seguro     nos cantos do   carrinho mais afastada da saliência. Para se manter     seguro,   objectivo e hop para trás de mentir sobre seu personagem de     volta   (para Ada, ela terá de usar uma arma de fogo que não é a besta ou       ela só backflips). Nessa posição, você deve estar imune a quase todos     do   patrão ataques no carrinho, você só precisa se levantar para atirar     os   barris explosivos na pista.</p>
 <p>Bateu a Deborah e atirar o barril explosivo indicado no   bloqueio     (através do corte de cena). Mais dois barris explosivos estão   nas     faixas, estes simplesmente prejudicar você se o minecraft passa   por   eles   (em vez de matá-lo definitiva). Ficar propenso no carrinho   pode     parecer bizarro, mas também permite que você evite as placas de     madeira   que cruzam a pista a minha.</p>
 <p>No final do passeio, Helena terá que atirar a parte   brilhante   do   tentáculo para permanecer vivo. Leon, depois de   assistir Ada, deve     juntar-se (como deve Ada) e concentrar o fogo na   ponta do tentáculo.     Depois de Deborah é derrotada, o capítulo está   completo.</p>
-
-<p><img src="<?php echo asset('img/Rodapé.png'); ?>" width="900" height="95" /></p></td>
-</div>
-
-</table>
-
-</body>
-</html>
+@stop   

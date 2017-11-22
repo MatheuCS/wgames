@@ -1,112 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>WGames - Mortal Kombat</title>
-<style type="text/css">
+@extends('layout.base_layout')
+@section('titulo')
+  {{'Mortal Kombat'}}
+@stop
 
-body,td,th {
-  color: #FFF;
-}
-body {
-  background-color: #000;
-  background: url("/img/Fundo_site.jpg");
-}
-#apDiv1 {
-  position:absolute;
-  width:200px;
-  height:115px;
-  z-index:1;
-}
-#apDiv2 {
-  position:absolute;
-  width:200px;
-  height:115px;
-  z-index:1;
-}
-td img {display: block;}
-
-</style>
-
-</head>
-
-<body >
-<table width="950" border="0" align="center">
-  <tr>
-    <td><img src="<?php echo asset('img/cabecalho.gif'); ?>" width="941" height="250" /></td>
-  </tr>
-</table>
-<table width="950" border="0" align="center">
-  <tr>
-    <td><table style="margin-left: 10%;" border="0" cellpadding="0" cellspacing="0" width="950">
-      <!-- fwtable fwsrc="Menu.png" fwpage="Page 1" fwbase="Menu.gif" fwstyle="Dreamweaver" fwdocid = "207533512" fwnested="0" -->
-      <tr>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="1" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="154" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="47" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="155" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="41" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="155" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="43" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="155" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="44" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="155" height="1" border="0" id="undefined_2" /></td>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="1" height="1" border="0" id="undefined_2" /></td>
-      </tr>
-
-      <tr>
-
-        <td rowspan="2" colspan="2">
-          <a href="/">
-            <img name="Menu_r1_c1" src="<?php echo asset('img/Menu/Menu_r1_c1.gif'); ?>" width="155" height="30" border="0" id="Menu_r1_c1" alt="" />
-          </a>
-        </td>
-
-        <td rowspan="2"><img name="Menu_r1_c3" src="<?php echo asset('img/Menu/Menu_r1_c3.gif'); ?>" width="47" height="30" border="0" id="Menu_r1_c3" alt="" /></td>
-
-        <td rowspan="2">
-          <a href="/jogos">
-            <img name="Menu_r1_c4" src="<?php echo asset('img/Menu/Menu_r1_c4.gif'); ?>" width="155" height="30" border="0" id="Menu_r1_c4" alt="" />
-          </a>
-        </td>
-
-        <td rowspan="2">
-          <img name="Menu_r1_c5" src="<?php echo asset('img/Menu/Menu_r1_c5.gif'); ?>" width="41" height="30" border="0" id="Menu_r1_c5" alt="" />
-        </td>
-
-        <td rowspan="2">
-          <a href="/detonado">
-            <img name="Menu_r1_c6" src="<?php echo asset('img/Menu/Menu_r1_c6.gif'); ?>" width="155" height="30" border="0" id="Menu_r1_c6" alt="" />
-          </a>
-        </td>
-
-        <td rowspan="2">
-          <img name="Menu_r1_c7" src="<?php echo asset('img/Menu/Menu_r1_c7.gif'); ?>" width="43" height="30" border="0" id="Menu_r1_c7" alt="" />
-        </td>
-
-        <td rowspan="2">
-          <a href="contato">
-            <img name="Menu_r1_c10" src="<?php echo asset('img/Menu/Menu_r1_c10.gif'); ?>" width="155" height="30" border="0" id="Menu_r1_c10" alt="" />
-          </a>
-        </td>
-
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="1" height="1" border="0" id="undefined_2" /></td>
-
-      </tr>
-      <tr>
-        <td><img src="<?php echo asset('img/Menu/spacer.gif'); ?>" alt="" name="undefined_2" width="1" height="29" border="0" id="undefined_2" /></td>
-      </tr>
-    </table>
-  </td> 
-  </tr>
-</table>
-
-<table width="944" height="auto" border="0" align="center">
-
-  <tr bgcolor="#000000">
-    <td height="auto">
-      <div style="margin: 2%;">
-
+@section('conteudo')
       <?php $jogos = ['Diablo 3', 'Dishonored', 'Far Cry 3', 'Mortal Kombat', 'Resident Evil', 'Skyrim', 'Tomb Raider'];?>
       <h2><?php echo $jogos[$id] . " - "; ?>Ficha técnica:<br /></h2>
       <p>Desenvolvedor: Desenvolvido pela Netherrealm Studios juntamente comANDYN (anteriormente conhecido como WB Games Chicago).</p>
@@ -122,7 +19,6 @@ td img {display: block;}
       <p>O jogo retorna as suas raízes, com lutas com movimentação completamente 2D, mas gráficos em 3D, onde não há mais possibilidade de se esquivar dos golpes andando para os lados e é o jogo mais rápido da série. Ao invés do clássico controle com Soco e Chute, Alto e Baixo, terá um botão pra cada membro sendo Braço e Perna, Esquerda e Direita.</p>
       <p>O jogo conta com vários modos de jogo. O principal é o Kombate, onde permite lutas um contra um ou em duplas, permitindo até 4 jogadores lutarem na mesma partida. Outro modo de jogo é a Torre dos Desafios, que consiste em uma grande torre dividida em 300 partes, onde cada parte contém um desafio a ser completado com um personagem especifico. Alguns dos desafios que compões a torre são os Minigames <em>Teste sua Força</em>, em que o jogador deve apertar freneticamente os botões do controle com o objetivo de acumular força para quebrar certos objetos; o <em>Teste seu Golpe</em>, onde o jogador deve acumular uma quantidade muito precisa de força para quebrar somente o objeto que está em uma pilha; o <em>Teste sua Sorte</em>, onde uma roleta sorteia várias condições especiais para a luta; e o <em>Teste sua Percepção</em>, onde um objeto é escondido em um dos vários copos/crânios e são embaralhados e cabe ao jogador descobrir onde estão.</p>
       <p> Durante as lutas foram adicionados vários novos sistemas e alguns reformulados, como os combos, onde pode-se ligar quase todos os golpes tendo poucos golpes que não tem ligação ou combos já programados e alguns personagens podem usar armas durante eles. Além disso os combos podem ser ligados com o parceiro no modo Tag-Team, assim criando sequencias únicas com dois personagens. Ao jogo também foi adicionada uma barra, que é usada para fazer movimentos especiais. Ela dividida em 3 níveis que podem respectivamente tornar os golpes especiais mais fortes, revidar um golpe e o Movimento de Raio-X, um combo mostrando os danos causados pelos golpes diretamente nos ossos e órgãos dos adversários, podendo retirar até 50% da vida do oponente dependendo do personagem. E por fim também há os <em>Golpes Finais</em>, um movimento em que se faz uma sequência de botões para finalizar o oponente de uma forma violenta, além dos movimentos finais de cada personagem, há o <em>Fatality de Arena</em> ou <em>Stage Fatality</em>, agora inovado, ao invés de simplesmente desferir um uppercut no oponente, o jogador executa um movimento que o leva a uma morte consequente (Ex: Na floresta viva, ao invés de dar um gancho no oponente, o personagem o agarra pelo ombro e o braço e o arremessa na boca de uma árvore que mastiga até que as pernas quebrem e se desprendam do corpo). Há também a inclusão do famoso <em>Babality</em>, em que o oponente volta a ser um bebê chorão. (Ex: Reptile, quando é pego por um, torna-se um ovo de réptil e eclode, tornando-se um &quot;bebê-réptil&quot;, começando a chorar e cuspir ácido).</p>
-      <p>&nbsp;</p>
 <h2>Analise:</h2>
 <p>Sucesso absoluto na década de 90, a série de luta &quot;Mortal Kombat&quot; rivalizou com &quot;Street Fighter&quot; no período pelo título de franquia de pancadaria mais popular, deixando para trás até outros nomes fortes, como &quot;King of Fighters&quot; e &quot;Tekken&quot;.<br />
   <br />
@@ -155,10 +51,7 @@ td img {display: block;}
   <br />
   Acabou? Ainda não. Donos de PlayStation 3 contam com dois motivos extras para vibrar: o título traz suporte a tecnologia 3D estereoscópica e, o melhor, traz o adorado Kratos, protagonista da série &quot;God of War&quot;, como lutador convidado, combinando perfeitamente com a brutalidade dos demais brucutus, ciborgues e donzelas ninjas nada dóceis - o carecão tem até cenário próprio, com Stage Fatality e tudo.<br />
 </p>
-<p><img src="<?php echo asset('img/Rodapé.png'); ?>" width="900" height="95" /></p></td>
-</div>
+@stop
 
-</table>
 
-</body>
-</html>
+      
